@@ -76,10 +76,4 @@ jobs:
           app-name: 'XVDicom'
           slot-name: 'Production'
 
-      - name: 'Deploy to Azure Static Web App'
-        uses: azure/static-web-apps-deploy@v1
-        with:
-          app_name: 'XVDicom'  # Ensure this matches the name in Azure
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_BUSH_00FA82503 }}
 
-          
