@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DICOM Series Viewer</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script src="https://unpkg.com/cornerstone-core@2.3.0/dist/cornerstone.min.js"></script>
+    <script src="https://unpkg.com/cornerstone-tools@4.12.4/dist/cornerstone-tools.min.js"></script>
+    <script src="https://unpkg.com/cornerstone-math@0.1.8/dist/cornerstone-math.min.js"></script>
+    <script src="https://unpkg.com/cornerstone-wado-image-loader@4.3.1/dist/cornerstone-wado-image-loader.min.js"></script>
+    <script src="https://unpkg.com/dicom-parser@1.8.5/dist/dicomParser.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+    <h1>DICOM Series Upload</h1>
+    <form action="/upload_series" method="post" enctype="multipart/form-data">
+        <input type="file" name="dicomfiles" multiple>
+        <input type="submit" value="Upload Series">
+    </form>
+    <div id="dicomViewer" style="width:512px; height:512px;"></div>
+    <button onclick="previousImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+</body>
+</html>
