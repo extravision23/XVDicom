@@ -41,7 +41,7 @@ jobs:
           enable-AzPSSession: false
           environment: azurecloud
           allow-no-subscriptions: false
-          auth-type: federated
+          auth-type: SERVICE_PRINCIPAL
 
 
       - name: Deploy to Azure Web App
