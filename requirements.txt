@@ -1,5 +1,5 @@
 Flask==2.1.2
-SimpleITK==2.1.1
+SimpleITK==2.3.1
 monai==0.8.0
 torch==1.10.0
 vtk==9.1.0
