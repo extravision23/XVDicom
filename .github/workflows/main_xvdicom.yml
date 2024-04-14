@@ -41,8 +41,7 @@ jobs:
           enable-AzPSSession: false
           environment: azurecloud
           allow-no-subscriptions: false
-          audience: api://AzureADTokenExchange
-          auth-type: SERVICE_PRINCIPAL
+          auth-type: federated
 
 
       - name: Deploy to Azure Web App
